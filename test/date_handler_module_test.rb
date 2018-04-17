@@ -1,6 +1,7 @@
 require './test/test_helper'
 require './modules/date_handler'
 require 'date'
+require 'pry'
 
 class DateHandlerTest < Minitest::Test
   include DateHandler
@@ -18,6 +19,7 @@ class DateHandlerTest < Minitest::Test
 
     dh = DateHandler::DHDate.new(date)
     assert dh.date_between(start_date, end_date)
+    binding.pry
   end
 
   def test_days_between

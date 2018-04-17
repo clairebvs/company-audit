@@ -1,4 +1,5 @@
 require 'date'
+require './modules/date_handler'
 #
 module DateHandler
   require 'date'

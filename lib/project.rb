@@ -1,25 +1,21 @@
 require './modules/date_handler'
 
-class Employee
+class Project
 
-  attr_reader :employee_id,
+  attr_reader :id,
               :name,
-              :role,
               :start_date,
               :end_date
 
-  def initialize(employee_id, name, role, start_date, end_date)
-    @employee_id = employee_id
+  def initialize(project_id, name, start_date, end_date)
+    @project_id = project_id
     @name = name
-    @role = role
     @start_date = Date.new
     @end_date = Date.new
   end
 
   def id
-    @employee_id.to_i
+    @project_id.to_i
   end
-
-
 
 end
